@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+
+<html lang="english">
+  <head>
+    <title>IRF project (prototype)</title>
+    <meta property="og:title" content="exported project" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 0.8;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      data-tag="font"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./page.css" rel="stylesheet" />
+
+      <div class="page-container">
+        <div class="page-container1">
+          <div class="page-container2">
+            <div class="page-colorclad-row-1">
+              <button id="colorc_btn_1"
+                      stockCode="3500"
+                      desc="Colourclad 0.5mm Green Coil"
+                      class="page-color button"
+                      onclick="showModal(this);"
+                      >
+                <p class="page-text">
+                  <span class="page-text001">Colorclad</span>
+                  <span> </span>
+                  <br />
+                  <span>button 1 <br /> Green </span>
+                  <br />
+                </p>
+              </button>
+              <button id="ColorC_Btn_2" 
+                      stockCode="3503"
+                      desc="Colourclad 0.6mm Green Coil"
+                      class="page-color01 button"
+                      onclick="showModal(this);"
+                      >
+                <p class="page-text006">
+                  <span class="page-text007">Colorclad</span>
+                  <span> </span>
+                  <br />
+                  <span>button2</span>
+                  <br />
+                </p>
+              </button>
+              <button id="ColorC_Btn_3"
+                      stockCode="35001"
+                      desc="Colourclad DN 0.5mm Green Coil"
+                      class="page-color02 button"
+                      onclick="showModal(this);"
+                      >
+
+                <p class="page-text012">
+                  <span class="page-text013">Colorclad</span>
+                  <span> </span>
+                  <br class="page-text015" />
+                  <span>button3</span>
+                  <br />
+                </p>
+              </button>
+              <button id="ColorC_Btn_4"
+                      stockCode="35041"
+                      desc="Colourclad DN 0.6mm Green Coil"
+                      class="page-color03 button"
+                      onclick="showModal(this);"
+                      >
+                <p class="page-text018">
+                  <span class="page-text019">Colorclad</span>
+                  <span> </span>
+                  <br />
+                  <span>Button 4 <br/> Green 0.6DN</span>
+                  <br />
+                </p>
+              </button>
+              <button id="ColorC_Btn_5" 
+                      stockCode="35021"
+                      desc="Colourclad 0.5mm Black Coil"
+                      class="page-color04 button"
+                      onclick="showModal(this);"
+                      >
+                <p class="page-text024">
+                  <span class="page-text025">Colorclad</span>
+                  <span class="page-text026"> </span>
+                  <br class="page-text027" />
+                  <span class="page-text028">Black 0.5</span>
+                  <br />
+                </p>
+              </button>
+              <button id="ColorC_Btn_6"
+                      stockCode="35051"
+                      desc="Colourclad 0.6mm Black Coil"
+                      class="page-color05 button"
+                      onclick="showModal(this);"
+                      >
+                <p class="page-text030">
+                  <span class="page-text031">Colorclad</span>
+                  <span class="page-text032"> </span>
+                  <br class="page-text033" />
+                  <span class="page-text034">Green 0.6</span>
+                  <br />
+                </p>
+              </button>
+              <button id="Color_Btn_7"
+                      stockCode="35052"
+                      desc="Colourclad 0.5mm Goosewing Grey Coil"
+                      class="page-color06 button"
+                      onclick="showModal(this);"
+                      >
+                <p class="page-text036">
+                  <span class="page-text037">Colorclad</span>
+                  <span class="page-text038"> </span>
+                  <br class="page-text039" />
+                  <span class="page-text040">Goosewing</span>
+                  <br class="page-text041" />
+                  <span class="page-text042">grey 0.5DN</span>
+                  <br />
+                </p>
+              </button>
+            </div>
+            <div class="page-colorclad-row-2">
+              <button class="page-color07 button">
+                <p class="page-text044">
+                  <span class="page-text045">Colorclad</span>
+                  <span class="page-text046"> </span>
+                  <br class="page-text047" />
+                  <span class="page-text048">Slate grey</span>
+                  <br class="page-text049" />
+                  <span class="page-text050">0.</span>
+                  <span class="page-text051">5</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-color08 button">
+                <p class="page-text053">
+                  <span class="page-text054">Colorclad</span>
+                  <span class="page-text055"> </span>
+                  <br class="page-text056" />
+                  <span class="page-text057">Slate grey</span>
+                  <br class="page-text058" />
+                  <span class="page-text059">0.6</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-color09 button">
+                <p class="page-text061">
+                  <span class="page-text062">Colorclad</span>
+                  <span class="page-text063"> </span>
+                  <br class="page-text064" />
+                  <span class="page-text065">Slate grey</span>
+                  <br class="page-text066" />
+                  <span class="page-text067">0.</span>
+                  <span class="page-text068">5 DN</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-color10 button">
+                <p class="page-text070">
+                  <span class="page-text071">Colorclad</span>
+                  <span class="page-text072"> </span>
+                  <br class="page-text073" />
+                  <span class="page-text074">Slate grey</span>
+                  <br class="page-text075" />
+                  <span class="page-text076">0.6 DN</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-color11 button">
+                <p class="page-text078">
+                  <span class="page-text079">Colorclad</span>
+                  <span class="page-text080"> </span>
+                  <br class="page-text081" />
+                  <span class="page-text082">Brown</span>
+                  <br class="page-text083" />
+                  <span class="page-text084">0.</span>
+                  <span class="page-text085">5</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-color12 button">
+                <p class="page-text087">
+                  <span class="page-text088">Colorclad</span>
+                  <span class="page-text089"> </span>
+                  <br class="page-text090" />
+                  <span class="page-text091">Brown</span>
+                  <br class="page-text092" />
+                  <span class="page-text093">0.6</span>
+                  <br />
+                </p>
+              </button>
+            </div>
+            <div class="page-agrispec-row-1">
+              <button class="page-agri button">
+                <p class="page-text095">
+                  <span class="page-text096">Agrispec </span>
+                  <br class="page-text097" />
+                  <span class="page-text098">Green</span>
+                  <br class="page-text099" />
+                  <span class="page-text100">0.6</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-agri01 button">
+                <p class="page-text102">
+                  <span class="page-text103">Agrispec </span>
+                  <br class="page-text104" />
+                  <span class="page-text105">Green</span>
+                  <br class="page-text106" />
+                  <span class="page-text107">0.7</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-agri02 button">
+                <p class="page-text109">
+                  <span class="page-text110">Agrispec </span>
+                  <br class="page-text111" />
+                  <span class="page-text112">Green</span>
+                  <br class="page-text113" />
+                  <span class="page-text114">0.6 DK</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-agri03 button">
+                <p class="page-text116">
+                  <span class="page-text117">Agrispec </span>
+                  <br class="page-text118" />
+                  <span class="page-text119">Green</span>
+                  <br class="page-text120" />
+                  <span class="page-text121">0.7 DK</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-agri04 button">
+                <p class="page-text123">
+                  <span class="page-text124">Agrispec </span>
+                  <br class="page-text125" />
+                  <span class="page-text126">Green</span>
+                  <br class="page-text127" />
+                  <span class="page-text128">10/3 0.6</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-agri05 button">
+                <p class="page-text130">
+                  <span class="page-text131">Agrispec </span>
+                  <br class="page-text132" />
+                  <span class="page-text133">Green</span>
+                  <br class="page-text134" />
+                  <span class="page-text135">10/3 0.7</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-agri06 button">
+                <p class="page-text137">
+                  <span class="page-text138">Agrispec </span>
+                  <br class="page-text139" />
+                  <span class="page-text140">Brown</span>
+                  <br class="page-text141" />
+                  <span class="page-text142">10/3 0.7</span>
+                  <br />
+                </p>
+              </button>
+            </div>
+            <div class="page-agrispec-row-2">
+              <button class="page-agri07 button">
+                <p class="page-text144">
+                  <span class="page-text145">Agrispec </span>
+                  <br class="page-text146" />
+                  <span class="page-text147">Slategrey</span>
+                  <br class="page-text148" />
+                  <br />
+                </p>
+              </button>
+              <button class="page-agri08 button">
+                <p class="page-text150">
+                  <span class="page-text151">Agrispec </span>
+                  <br class="page-text152" />
+                  <span class="page-text153">Slategrey</span>
+                  <br class="page-text154" />
+                  <br />
+                </p>
+              </button>
+              <button class="page-agri09 button">
+                <p class="page-text156">
+                  <span class="page-text157">Agrispec </span>
+                  <br class="page-text158" />
+                  <span class="page-text159">Slategrey</span>
+                  <br class="page-text160" />
+                  <br />
+                </p>
+              </button>
+              <button class="page-agri10 button">
+                <p class="page-text162">
+                  <span class="page-text163">Agrispec </span>
+                  <br class="page-text164" />
+                  <span class="page-text165">Slategrey</span>
+                  <br class="page-text166" />
+                  <br />
+                </p>
+              </button>
+              <button class="page-agri11 button">
+                <p class="page-text168">
+                  <span class="page-text169">Agrispec </span>
+                  <br class="page-text170" />
+                  <span class="page-text171">Slategrey</span>
+                  <br class="page-text172" />
+                  <br />
+                </p>
+              </button>
+              <button class="page-agri12 button">
+                <p class="page-text174">
+                  <span class="page-text175">Agrispec </span>
+                  <br class="page-text176" />
+                  <span class="page-text177">Slategrey</span>
+                  <br class="page-text178" />
+                  <br />
+                </p>
+              </button>
+              <button class="page-agri13 button">
+                <p class="page-text180">
+                  <span class="page-text181">Agrispec </span>
+                  <br class="page-text182" />
+                  <span class="page-text183">Slategrey</span>
+                  <br class="page-text184" />
+                  <br />
+                </p>
+              </button>
+            </div>
+            <div class="page-p-v-c-colours-row-1">
+              <button class="page-pvc button">
+                <p class="page-text186">
+                  <span>Goosewing</span>
+                  <br />
+                  <span>Grey PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc01 button">
+                <p class="page-text191">
+                  <span>Goosewing</span>
+                  <br />
+                  <span>Grey PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc02 button">
+                <p class="page-text196">
+                  <span>Goosewing</span>
+                  <br />
+                  <span>Grey PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc03 button">
+                <p class="page-text201">
+                  <span>Goosewing</span>
+                  <br />
+                  <span>Grey PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc04 button">
+                <p class="page-text206">
+                  <span>Goosewing</span>
+                  <br />
+                  <span>Grey PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc05 button">
+                <p class="page-text211">
+                  <span>Goosewing</span>
+                  <br />
+                  <span>Grey PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc06 button">
+                <p class="page-text216">
+                  <span>Goosewing</span>
+                  <br />
+                  <span>Grey PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc07 button">
+                <p class="page-text221">
+                  <span>Goosewing</span>
+                  <br />
+                  <span>Grey PVC</span>
+                  <br />
+                </p>
+              </button>
+            </div>
+            <div class="page-p-v-c-colours-row-2">
+              <button class="page-pvc08 button">
+                <p class="page-text226">
+                  <span>Anthracite</span>
+                  <br />
+                  <span>PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc09 button">
+                <p class="page-text231">
+                  <span class="page-text232">Anthracite</span>
+                  <br class="page-text233" />
+                  <span class="page-text234">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc10 button">
+                <p class="page-text236">
+                  <span class="page-text237">Anthracite</span>
+                  <br class="page-text238" />
+                  <span class="page-text239">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc11 button">
+                <p class="page-text241">
+                  <span class="page-text242">Anthracite</span>
+                  <br class="page-text243" />
+                  <span class="page-text244">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc12 button">
+                <p class="page-text246">
+                  <span class="page-text247">Anthracite</span>
+                  <br class="page-text248" />
+                  <span class="page-text249">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc13 button">
+                <p class="page-text251">
+                  <span class="page-text252">Anthracite</span>
+                  <br class="page-text253" />
+                  <span class="page-text254">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc14 button">
+                <p class="page-text256">
+                  <span class="page-text257">Anthracite</span>
+                  <br class="page-text258" />
+                  <span class="page-text259">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc15 button">
+                <p class="page-text261">
+                  <span class="page-text262">Anthracite</span>
+                  <br class="page-text263" />
+                  <span class="page-text264">PVC</span>
+                  <br />
+                </p>
+              </button>
+            </div>
+            <div class="page-p-v-c-colours-row-3">
+              <button class="page-pvc16 button">
+                <p class="page-text266">
+                  <span>Merlin Grey</span>
+                  <br />
+                  <span>PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc17 button">
+                <p class="page-text271">
+                  <span class="page-text272">Merlin Grey</span>
+                  <br class="page-text273" />
+                  <span class="page-text274">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc18 button">
+                <p class="page-text276">
+                  <span class="page-text277">Merlin Grey</span>
+                  <br class="page-text278" />
+                  <span class="page-text279">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc19 button">
+                <p class="page-text281">
+                  <span class="page-text282">Merlin Grey</span>
+                  <br class="page-text283" />
+                  <span class="page-text284">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc20 button">
+                <p class="page-text286">
+                  <span class="page-text287">Merlin Grey</span>
+                  <br class="page-text288" />
+                  <span class="page-text289">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc21 button">
+                <p class="page-text291">
+                  <span class="page-text292">Merlin Grey</span>
+                  <br class="page-text293" />
+                  <span class="page-text294">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc22 button">
+                <p class="page-text296">
+                  <span class="page-text297">Merlin Grey</span>
+                  <br class="page-text298" />
+                  <span class="page-text299">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc23 button">
+                <p class="page-text301">
+                  <span class="page-text302">Merlin Grey</span>
+                  <br class="page-text303" />
+                  <span class="page-text304">PVC</span>
+                  <br />
+                </p>
+              </button>
+            </div>
+            <div class="page-p-v-c-colours-row-4">
+              <button class="page-pvc24 button">
+                <p class="page-text306">
+                  <span class="page-text307">Black</span>
+                  <br class="page-text308" />
+                  <span class="page-text309">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc25 button">
+                <p class="page-text311">
+                  <span class="page-text312">Black</span>
+                  <br class="page-text313" />
+                  <span class="page-text314">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc26 button">
+                <p class="page-text316">
+                  <span class="page-text317">Black</span>
+                  <br class="page-text318" />
+                  <span class="page-text319">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc27 button">
+                <p class="page-text321">
+                  <span class="page-text322">Black</span>
+                  <br class="page-text323" />
+                  <span class="page-text324">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc28 button">
+                <p class="page-text326">
+                  <span class="page-text327">Black</span>
+                  <br class="page-text328" />
+                  <span class="page-text329">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc29 button">
+                <p class="page-text331">
+                  <span class="page-text332">Black</span>
+                  <br class="page-text333" />
+                  <span class="page-text334">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc30 button">
+                <p class="page-text336">
+                  <span class="page-text337">Black</span>
+                  <br class="page-text338" />
+                  <span class="page-text339">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc31 button">
+                <p class="page-text341">
+                  <span class="page-text342">Black</span>
+                  <br class="page-text343" />
+                  <span class="page-text344">PVC</span>
+                  <br />
+                </p>
+              </button>
+            </div>
+            <div class="page-p-v-c-colours-row-5">
+              <button class="page-pvc32 button">
+                <p class="page-text346">
+                  <span class="page-text347">Olive Green</span>
+                  <br class="page-text348" />
+                  <span class="page-text349">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc33 button">
+                <p class="page-text351">
+                  <span class="page-text352">Olive Green</span>
+                  <br class="page-text353" />
+                  <span class="page-text354">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc34 button">
+                <p class="page-text356">
+                  <span class="page-text357">Olive Green</span>
+                  <br class="page-text358" />
+                  <span class="page-text359">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc35 button">
+                <p class="page-text361">
+                  <span class="page-text362">Olive Green</span>
+                  <br class="page-text363" />
+                  <span class="page-text364">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc36 button">
+                <p class="page-text366">
+                  <span class="page-text367">Olive Green</span>
+                  <br class="page-text368" />
+                  <span class="page-text369">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc37 button">
+                <p class="page-text371">
+                  <span class="page-text372">Olive Green</span>
+                  <br class="page-text373" />
+                  <span class="page-text374">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc38 button">
+                <p class="page-text376">
+                  <span class="page-text377">Olive Green</span>
+                  <br class="page-text378" />
+                  <span class="page-text379">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc39 button">
+                <p class="page-text381">
+                  <span class="page-text382">Olive Green</span>
+                  <br class="page-text383" />
+                  <span class="page-text384">PVC</span>
+                  <br />
+                </p>
+              </button>
+            </div>
+            <div class="page-p-v-c-colours-row-6">
+              <button class="page-pvc40 button">
+                <p class="page-text386">
+                  <span class="page-text387">Juniper Green</span>
+                  <br class="page-text388" />
+                  <span class="page-text389">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc41 button">
+                <p class="page-text391">
+                  <span class="page-text392">Juniper Green</span>
+                  <br class="page-text393" />
+                  <span class="page-text394">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc42 button">
+                <p class="page-text396">
+                  <span class="page-text397">Juniper Green</span>
+                  <br class="page-text398" />
+                  <span class="page-text399">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc43 button">
+                <p class="page-text401">
+                  <span class="page-text402">Juniper Green</span>
+                  <br class="page-text403" />
+                  <span class="page-text404">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc44 button">
+                <p class="page-text406">
+                  <span class="page-text407">Juniper Green</span>
+                  <br class="page-text408" />
+                  <span class="page-text409">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc45 button">
+                <p class="page-text411">
+                  <span class="page-text412">Juniper Green</span>
+                  <br class="page-text413" />
+                  <span class="page-text414">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc46 button">
+                <p class="page-text416">
+                  <span class="page-text417">Juniper Green</span>
+                  <br class="page-text418" />
+                  <span class="page-text419">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc47 button">
+                <p class="page-text421">
+                  <span class="page-text422">Juniper Green</span>
+                  <br class="page-text423" />
+                  <span class="page-text424">PVC</span>
+                  <br />
+                </p>
+              </button>
+            </div>
+            <div class="page-p-v-c-colours-row-7">
+              <button class="page-pvc48 button">
+                <p class="page-text426">
+                  <span class="page-text427">VanDyke Brown</span>
+                  <br class="page-text428" />
+                  <span class="page-text429">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc49 button">
+                <p class="page-text431">
+                  <span class="page-text432">VanDyke Brown</span>
+                  <br class="page-text433" />
+                  <span class="page-text434">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc50 button">
+                <p class="page-text436">
+                  <span class="page-text437">VanDyke Brown</span>
+                  <br class="page-text438" />
+                  <span class="page-text439">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc51 button">
+                <p class="page-text441">
+                  <span class="page-text442">VanDyke Brown</span>
+                  <br class="page-text443" />
+                  <span class="page-text444">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc52 button">
+                <p class="page-text446">
+                  <span class="page-text447">VanDyke Brown</span>
+                  <br class="page-text448" />
+                  <span class="page-text449">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc53 button">
+                <p class="page-text451">
+                  <span class="page-text452">VanDyke Brown</span>
+                  <br class="page-text453" />
+                  <span class="page-text454">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc54 button">
+                <p class="page-text456">
+                  <span class="page-text457">VanDyke Brown</span>
+                  <br class="page-text458" />
+                  <span class="page-text459">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc55 button">
+                <p class="page-text461">
+                  <span class="page-text462">VanDyke Brown</span>
+                  <br class="page-text463" />
+                  <span class="page-text464">PVC</span>
+                  <br />
+                </p>
+              </button>
+            </div>
+            <div class="page-p-v-c-colours-row-8">
+              <button class="page-pvc56 button">
+                <p class="page-text466">
+                  <span class="page-text467">Mushroom</span>
+                  <br />
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc57 button">
+                <p class="page-text470">
+                  <span class="page-text471">Mushroom</span>
+                  <br class="page-text472" />
+                  <span class="page-text473">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc58 button">
+                <p class="page-text475">
+                  <span class="page-text476">Mushroom</span>
+                  <br class="page-text477" />
+                  <span class="page-text478">PVC</span>
+                  <br class="page-text479" />
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc59 button">
+                <p class="page-text481">
+                  <span class="page-text482">Mushroom</span>
+                  <br class="page-text483" />
+                  <span class="page-text484">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc60 button">
+                <p class="page-text486">
+                  <span class="page-text487">Mushroom</span>
+                  <br class="page-text488" />
+                  <span class="page-text489">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc61 button">
+                <p class="page-text491">
+                  <span class="page-text492">Mushroom</span>
+                  <br class="page-text493" />
+                  <span class="page-text494">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc62 button">
+                <p class="page-text496">
+                  <span class="page-text497">Mushroom</span>
+                  <br class="page-text498" />
+                  <span class="page-text499">PVC</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc63 button">
+                <p class="page-text501">
+                  <span class="page-text502">Mushroom</span>
+                  <br class="page-text503" />
+                  <span class="page-text504">PVC</span>
+                  <br />
+                </p>
+              </button>
+            </div>
+            <div class="page-p-v-c-colours-row-9">
+              <button id="btn_more_colour" class="page-pvc64 button">
+                <p class="page-text506">
+                  <span class="page-text507">more colours</span>
+                  <br />
+                </p>
+              </button>
+            </div>
+            <div class="page-container3">
+              <div class="page-container4">
+                <span class="page-text509">Text</span>
+                <svg viewBox="0 0 1024 1024" class="page-icon">
+                  <path
+                    d="M726 666l-154-154 154-154-60-60-154 154-154-154-60 60 154 154-154 154 60 60 154-154 154 154zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="page-container5">
+                <span class="page-text510">
+                  <span>Available Qty...</span>
+                  <br />
+                </span>
+              </div>
+            </div>
+            <div class="page-flashsheetwrapper">
+              <div class="page-sheetingwrapper">
+                <div class="page-sheeting-row-0">
+                  <div class="page-sheet">
+                    <p class="page-text513">
+                      <span class="page-text514">Sheeting</span>
+                      <br class="page-text515" />
+                      <br />
+                    </p>
+                  </div>
+                </div>
+                <div class="page-sheeting-row-1">
+                  <button class="page-sheet01 button">
+                    <p class="page-text517">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet02 button">
+                    <p class="page-text520">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet03 button">
+                    <p class="page-text523">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet04 button">
+                    <p class="page-text526">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                </div>
+                <div class="page-sheeting-row-2">
+                  <button class="page-sheet05 button">
+                    <p class="page-text529">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet06 button">
+                    <p class="page-text532">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet07 button">
+                    <p class="page-text535">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet08 button">
+                    <p class="page-text538">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                </div>
+                <div class="page-sheeting-row-3">
+                  <button class="page-sheet09 button">
+                    <p class="page-text541">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet10 button">
+                    <p class="page-text544">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet11 button">
+                    <p class="page-text547">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet12 button">
+                    <p class="page-text550">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                </div>
+                <div class="page-sheeting-row-4">
+                  <button class="page-sheet13 button">
+                    <p class="page-text553">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet14 button">
+                    <p class="page-text556">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet15 button">
+                    <p class="page-text559">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet16 button">
+                    <p class="page-text562">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                </div>
+                <div class="page-purlin-row">
+                  <button class="page-purlin button">
+                    <p class="page-text565">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-purlin1 button">
+                    <p class="page-text568">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-purlin2 button">
+                    <p class="page-text571">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-purlin3 button">
+                    <p class="page-text574">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                </div>
+                <div class="page-access-row">
+                  <button class="page-access button">
+                    <p class="page-text577">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                </div>
+                <div class="page-access-row1">
+                  <button class="page-access1 button">
+                    <p class="page-text580">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                </div>
+              </div>
+              <div class="page-flashingwrapper">
+                <div class="page-flash-row-0">
+                  <div class="page-sheet17">
+                    <p class="page-text583">
+                      <span class="page-text584">flashing</span>
+                      <br />
+                      <br />
+                    </p>
+                  </div>
+                </div>
+                <div class="page-flashrow-1">
+                  <button class="page-sheet18 button">
+                    <p class="page-text587">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet19 button">
+                    <p class="page-text590">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet20 button">
+                    <p class="page-text593">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                </div>
+                <div class="page-flashrow-2">
+                  <button class="page-sheet21 button">
+                    <p class="page-text596">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet22 button">
+                    <p class="page-text599">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet23 button">
+                    <p class="page-text602">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                </div>
+                <div class="page-flashrow-3">
+                  <button class="page-sheet24 button">
+                    <p class="page-text605">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet25 button">
+                    <p class="page-text608">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet26 button">
+                    <p class="page-text611">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                </div>
+                <div class="page-flashrow-4">
+                  <button class="page-sheet27 button">
+                    <p class="page-text614">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet28 button">
+                    <p class="page-text617">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                  <button class="page-sheet29 button">
+                    <p class="page-text620">
+                      <span>Box</span>
+                      <br />
+                    </p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page-client-details">
+            <span class="page-text623">Client Details</span>
+            <div class="page-client-detail-vertical">
+              <div class="page-client-details-horisontal">
+                <span class="page-text624">Account ref:</span>
+                <input
+                  type="text"
+                  placeholder="placeholder"
+                  class="page-textinput input"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-modalmorecolours" id="more_colour">
+          <div class="page-modal-content">
+            <div class="page-more-colours-row-0">
+              <h1 class="page-text625">More Colours</h1>
+              <svg viewBox="0 0 1024 1024" class="page-icon2">
+                <path
+                  d="M726 666l-154-154 154-154-60-60-154 154-154-154-60 60 154 154-154 154 60 60 154-154 154 154zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125z"
+                ></path>
+              </svg>
+            </div>
+            <div class="page-more-colours-row-1">
+              <button class="page-pvc65 button">
+                <p class="page-text626">
+                  <span>Honesty</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc66 button">
+                <p class="page-text629">
+                  <span>Honesty</span>
+                  <br />
+                </p>
+              </button>
+            </div>
+            <div class="page-more-colours-row-2">
+              <button class="page-pvc67 button">
+                <p class="page-text632">
+                  <span>Honesty</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc68 button">
+                <p class="page-text635">
+                  <span>Honesty</span>
+                  <br />
+                </p>
+              </button>
+            </div>
+            <div class="page-more-colours-row-3">
+              <button class="page-pvc69 button">
+                <p class="page-text638">
+                  <span>Honesty</span>
+                  <br />
+                </p>
+              </button>
+              <button class="page-pvc70 button">
+                <p class="page-text641">
+                  <span>Honesty</span>
+                  <br />
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="page-modalaccessories-2" >
+          <div class="page-modal-2content">
+            <div class="page-more-colours-row-01">
+              <h1 class="page-text644">Accerssories</h1>
+              <svg viewBox="0 0 1024 1024" class="page-icon4">
+                <path
+                  d="M726 666l-154-154 154-154-60-60-154 154-154-154-60 60 154 154-154 154 60 60 154-154 154 154zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title">Stock Code</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                  <table class="table table-bordered">
+                      <tr>
+                          <th>Button ID:</th>
+                          <td id="td_BtnId"></td>
+                      </tr>
+                      <tr>
+                          <th>Stock Code:</th>
+                          <td id="td_StockCode"></td>
+                      </tr>
+                      <tr>
+                        <th>description:</th>
+                        <td id="td_desc"></td>
+                    </tr>
+                  </table>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+    <script>
+      const showModal = (thisBtn) => {
+          $('#myModal').modal('show');
+          clearModal();
+          let btnId = thisBtn.id;
+          let stockCode = $(thisBtn).attr('stockCode');
+          let desc = $(thisBtn).attr('desc');
+          fillModal(btnId, stockCode, desc);
+      };
+
+      const fillModal = (btnId, stockCode, desc) => {
+          $('#td_BtnId').text(btnId);
+          $('#td_StockCode').text(stockCode);
+          $('#td_desc').text(desc);
+      };
+
+      const clearModal = () => {
+          $('#td_BtnId').text('');
+          $('#td_StockCode').text('');
+          $('#td_desc').text('');
+      };
+  </script>
+
+  <script>
+    var modal = document.getElementById("more_colour");
+    var btn = document.getElementById("btn_more_colour");
+
+    btn.onclick = function() {
+     modal.style.display = "flex";
+        }   
+
+
+    window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      }  
+    }
+  </script>
+
+
+
+  </body>
+</html>
